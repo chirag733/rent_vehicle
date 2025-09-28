@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Focus styles */
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #2563eb !important;
+}
+
+.MuiFormControlLabel-root {
+  margin: 0;
+  width: 100%;
+}
+
+.MuiFormControlLabel-root .MuiFormControlLabel-label {
+  width: 100%;
+}
+
+/* Card hover effects */
+.MuiPaper-root {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.MuiPaper-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Button animations */
+.MuiButton-root {
+  transition: all 0.2s ease-in-out !important;
+}
+
+.MuiButton-root:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3) !important;
+}
+
+/* Stepper styling */
+.MuiStepLabel-root .MuiStepLabel-iconContainer .Mui-active {
+  color: #2563eb !important;
+}
+
+.MuiStepLabel-root .MuiStepLabel-iconContainer .Mui-completed {
+  color: #059669 !important;
+}
+
+/* Radio button styling */
+.MuiRadio-root.Mui-checked {
+  color: #2563eb !important;
+}
+
+/* Date picker styling */
+.MuiPickersDay-root.Mui-selected {
+  background-color: #2563eb !important;
+}
+
+.MuiPickersDay-root.Mui-selected:hover {
+  background-color: #1d4ed8 !important;
+}
+
+/* Alert styling */
+.MuiAlert-standardError {
+  background-color: #fef2f2 !important;
+  color: #991b1b !important;
+  border-left: 4px solid #dc2626 !important;
+}
+
+.MuiAlert-standardSuccess {
+  background-color: #f0fdf4 !important;
+  color: #166534 !important;
+  border-left: 4px solid #16a34a !important;
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .MuiContainer-root {
+    padding: 16px !important;
+  }
+  
+  .MuiPaper-root {
+    padding: 24px !important;
+  }
+  
+  .MuiTypography-h4 {
+    font-size: 1.75rem !important;
+  }
+  
+  .MuiStepper-root {
+    padding: 12px 0 !important;
+  }
+  
+  .MuiStep-root {
+    padding: 0 4px !important;
+  }
+  
+  .MuiStepLabel-label {
+    font-size: 0.875rem !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f172a;
+    color: #f8fafc;
+  }
+}
